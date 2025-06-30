@@ -230,7 +230,7 @@ collections:
     permalink: /:collection/:path/
   courses:
     output: true
-    permalink: /Courses/:path/
+    permalink: /collection/:path/
 
 # These settings control how pages and collections are included in the site
 defaults:
