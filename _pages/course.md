@@ -1,9 +1,14 @@
 ---
+layout: archive
 title: "Courses"
-permalink: /course/
-layout: collection
-collection: courses
+permalink: /courses/
 author_profile: true
 ---
 
-这是我的课程页面。下方自动列出所有课程条目。
+{% include base_path %}
+
+{% assign courses = site.courses | sort: 'date' | reverse %}
+
+{% for course in courses %}
+  {% include archive-single.html %}
+{% endfor %}
