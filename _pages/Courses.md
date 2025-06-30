@@ -4,6 +4,7 @@ title: "Courses"
 permalink: /courses/
 author_profile: true
 ---
+
 tttttttt
 {% include base_path %}
 
