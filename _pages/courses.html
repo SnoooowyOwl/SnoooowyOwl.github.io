@@ -4,6 +4,7 @@ title: "Courses"
 permalink: /courses/
 author_profile: true
 ---
+
 <p>课程条目总数：{{ site.courses | size }}</p>
 
 {% include base_path %}
@@ -11,5 +12,7 @@ author_profile: true
 {% assign courses = site.courses | sort: 'date' | reverse %}
 
 {% for course in courses %}
-  {% include archive-single.html %}
+  <h2><a href="{{ course.url }}">{{ course.title }}</a></h2>
+  <p>{{ course.excerpt }}</p>
 {% endfor %}
+
