@@ -27,7 +27,7 @@ author:
   pronouns         : # example: "she/her"  
   bio              : "none"
   location         : "Earth"
-  employer         : "none"
+  employer         : #
   uri              : # URL
   email            : "none" 
 
