@@ -16,7 +16,7 @@ classes: wide
 ## 章节目录
 
 <ul>
-  {% assign course_pages = site.courses | where: "parent", "computation-modeling" | sort: "date" %}
+  {% assign course_pages = site.courses | where: "parent", page.slug | sort: "date" %}
   {% for page in course_pages %}
     <li><a href="{{ page.url }}">{{ page.title }}</a></li>
   {% endfor %}
