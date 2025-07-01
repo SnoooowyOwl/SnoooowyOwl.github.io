@@ -7,12 +7,11 @@ author_profile: true
 
 <p>共有 {{ site.courses | size }} 门课</p>
 
-{% include base_path %}
-
 {% assign courses = site.courses | sort: 'date' | reverse %}
 
 {% for course in courses %}
-  <h2><a href="{{ course.url }}">{{ course.title }}</a></h2>
-  <p>{{ course.excerpt }}</p>
+  {% if course.parent == nil %}
+    <h2><a href="{{ course.url }}">{{ course.title }}</a></h2>
+    <p>{{ course.excerpt }}</p>
+  {% endif %}
 {% endfor %}
-
