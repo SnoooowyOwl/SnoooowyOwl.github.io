@@ -31,4 +31,3 @@ weight: 1
     <a class="next" href="{{ next.url }}">{{ next.title }} &rarr;</a>
   {% endif %}
 </nav>
-
