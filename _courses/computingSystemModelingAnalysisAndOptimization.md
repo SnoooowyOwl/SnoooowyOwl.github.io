@@ -31,9 +31,6 @@ toc: true
 
 ## Graph Basic      图基础
 
-<details open>
-<summary><strong>🔍 展开</strong></summary>
-
 **图基本概念**
 
 - 图的类型：有向图、无向图、加权图
@@ -46,14 +43,11 @@ toc: true
 - 最短路径：Dijkstra、Floyd、Bellman-Ford
 - 最小生成树：Kruskal / Prim 算法
 
-</details>
+
 
 ---
 
 ## Max-flow and Min-cut 最大流与最小割
-
-<details>
-<summary><strong>🔍 展开</strong></summary>
 
 - 网络流建模
 - Ford-Fulkerson 算法
@@ -61,26 +55,17 @@ toc: true
 - Max-flow / Min-cut 定理及证明
 - 图像分割、作业调度等实际应用
 
-</details>
 
 ---
 
 ## Tree covering 树覆盖
 
-<details>
-<summary><strong>🔍 展开</strong></summary>
-</details>
+
 
 ## Linear Programming 线性规划与整数线性规划
 
-<details>
-<summary><strong>🔍 展开</strong></summary>
-</details>
 
 ## BDD 布尔决策图
-
-<details>
-<summary><strong>🔍 展开</strong></summary>
 
 - 布尔函数的图表示
 - ROBDD 及其唯一性
@@ -88,14 +73,11 @@ toc: true
 - 变量排序策略对 BDD 大小的影响
 - BDD 在电路等价性验证中的应用
 
-</details>
 
 ---
 
 ## SAT 可满足性问题
 
-<details>
-<summary><strong>🔍 展开</strong></summary>
 
 - 命题逻辑语法与可满足性问题（SAT）
 - 3-SAT 归约与 NP 完全性
@@ -103,14 +85,11 @@ toc: true
 - Minisat / Z3 等求解器简介
 - SAT 在验证、测试向量生成中的应用
 
-</details>
 
 ---
 
 ## 建模与模型检查
 
-<details>
-<summary><strong>🔍 展开</strong></summary>
 
 - LTL：线性时序逻辑
 - CTL：计算树逻辑
@@ -118,14 +97,9 @@ toc: true
 - NuSMV/SPIN 实验工具介绍
 - 安规验证、硬件时序分析案例
 
-</details>
-
 ---
 
 ## Project
 
-<details>
-<summary><strong>🔍 展开</strong></summary>
 满足约束的随机解生成器
 
-</details>
