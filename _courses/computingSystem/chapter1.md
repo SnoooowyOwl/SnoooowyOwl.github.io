@@ -19,3 +19,4 @@ layout: single
     <a class="next" href="{{ next.url }}">{{ next.title }} &rarr;</a>
   {% endif %}
 </nav>
+
