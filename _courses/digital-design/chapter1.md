@@ -1,9 +1,9 @@
 ---
-title: "Graph Algorithm 图算法"
+title: "Project"
 collection: courses
-parent: computingSystem
+parent: digital-design
 layout: single
-weight: 2
+weight: 1
 ---
 
 
@@ -20,5 +20,4 @@ weight: 2
     <a class="next" href="{{ next.url }}">{{ next.title }} &rarr;</a>
   {% endif %}
 </nav>
-
 

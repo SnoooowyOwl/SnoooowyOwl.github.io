@@ -9,14 +9,19 @@ classes: wide
 weight: 1
 ---
 
-## 课程大作业：大矩阵乘法单元的设计
+test
 
 ---
 
-## 📚 参考资料
+## 章节目录
 
-- [verilator使用教程](#)
-- [示例代码](#)
+<ul>
+  {% assign course_pages = site.courses | where: "parent", page.slug | sort: "date" %}
+  {% for page in course_pages %}
+    <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+  {% endfor %}
+</ul>
+
 
 {% assign siblings = site.courses | where_exp: "item", "item.parent == nil" | sort: "weight" %}
 {% assign current_index = siblings | index_of: page %}
