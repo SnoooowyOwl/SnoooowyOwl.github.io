@@ -5,8 +5,6 @@ permalink: /courses/
 author_profile: true
 ---
 
-<p>共有 {{ site.courses | size }} 门课</p>
-
 {% assign courses = site.courses | sort: 'date' | reverse %}
 
 {% for course in courses %}
