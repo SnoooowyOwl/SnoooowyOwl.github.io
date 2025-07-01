@@ -13,9 +13,8 @@ toc: true
 
 ---
 
-## 📑 章节导航
+<div style="font-size: 1.2em; font-weight: bold;">📑 章节导航</div>
 
-- [📑 章节导航](#-章节导航)
 - [Graph Basic      图基础](#graph-basic------图基础)
 - [Graph Algorithm      图算法](#graph-algorithm------图算法)
 - [Max-flow and Min-cut 最大流与最小割](#max-flow-and-min-cut-最大流与最小割)
