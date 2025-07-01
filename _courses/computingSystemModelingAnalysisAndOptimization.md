@@ -9,7 +9,6 @@ classes: wide
 toc: true
 ---
 
-# 计算系统建模、分析与优化
 
 本课程介绍用于建模与分析复杂计算系统的核心方法。涵盖图论、布尔逻辑、SAT 求解器、BDD、LTL/CTL 等内容，是从事形式验证、EDA、复杂系统建模有关方向的入门课程
 
@@ -17,18 +16,17 @@ toc: true
 
 ## 📑 章节导航
 
-- [计算系统建模、分析与优化](#计算系统建模分析与优化)
-  - [📑 章节导航](#-章节导航)
-  - [Graph Basic      图基础](#graph-basic------图基础)
-    - [⚙️ 图基本概念](#️-图基本概念)
-  - [Graph Algorithm      图算法](#graph-algorithm------图算法)
-  - [Max-flow and Min-cut 最大流与最小割](#max-flow-and-min-cut-最大流与最小割)
-  - [Tree covering 树覆盖](#tree-covering-树覆盖)
-  - [Linear Programming 线性规划与整数线性规划](#linear-programming-线性规划与整数线性规划)
-  - [BDD 布尔决策图](#bdd-布尔决策图)
-  - [SAT 可满足性问题](#sat-可满足性问题)
-  - [建模与模型检查](#建模与模型检查)
-  - [Project](#project)
+- [📑 章节导航](#-章节导航)
+- [Graph Basic      图基础](#graph-basic------图基础)
+  - [⚙️ 图基本概念](#️-图基本概念)
+- [Graph Algorithm      图算法](#graph-algorithm------图算法)
+- [Max-flow and Min-cut 最大流与最小割](#max-flow-and-min-cut-最大流与最小割)
+- [Tree covering 树覆盖](#tree-covering-树覆盖)
+- [Linear Programming 线性规划与整数线性规划](#linear-programming-线性规划与整数线性规划)
+- [BDD 布尔决策图](#bdd-布尔决策图)
+- [SAT 可满足性问题](#sat-可满足性问题)
+- [建模与模型检查](#建模与模型检查)
+- [Project](#project)
 
 
 ---
