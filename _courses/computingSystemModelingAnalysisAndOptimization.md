@@ -9,7 +9,6 @@ classes: wide
 toc: true
 ---
 
-
 本课程介绍用于建模与分析复杂计算系统的核心方法。涵盖图论、布尔逻辑、SAT 求解器、BDD、LTL/CTL 等内容，是从事形式验证、EDA、复杂系统建模有关方向的入门课程
 
 ---
@@ -18,7 +17,6 @@ toc: true
 
 - [📑 章节导航](#-章节导航)
 - [Graph Basic      图基础](#graph-basic------图基础)
-  - [⚙️ 图基本概念](#️-图基本概念)
 - [Graph Algorithm      图算法](#graph-algorithm------图算法)
 - [Max-flow and Min-cut 最大流与最小割](#max-flow-and-min-cut-最大流与最小割)
 - [Tree covering 树覆盖](#tree-covering-树覆盖)
@@ -36,7 +34,7 @@ toc: true
 <details open>
 <summary><strong>🔍 展开</strong></summary>
 
-### ⚙️ 图基本概念
+**图基本概念**
 
 - 图的类型：有向图、无向图、加权图
 - 表示方法：邻接矩阵 / 邻接表
