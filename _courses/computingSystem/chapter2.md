@@ -1,7 +1,7 @@
 ---
 title: "Graph Algorithm 图算法"
 collection: courses
-parent: index
+parent: computingSystem
 layout: single
 weight: 2
 ---

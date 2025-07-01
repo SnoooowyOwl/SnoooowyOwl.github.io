@@ -1,7 +1,7 @@
 ---
 title: "Graph Bisic 图基础"
 collection: courses
-parent: index
+parent: computingSystem
 layout: single
 weight: 1
 ---
