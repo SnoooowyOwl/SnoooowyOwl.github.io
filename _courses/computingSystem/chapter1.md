@@ -3,10 +3,11 @@ title: "Graph Bisic 图基础"
 collection: courses
 parent: index
 layout: single
+weight: 1
 ---
 
 
-{% assign siblings = site.courses | where:"parent", page.parent | sort:"date" %}
+{% assign siblings = site.courses | where: "parent", page.parent | sort: "weight" %}
 {% assign current_index = siblings | index_of: page %}
 
 <nav class="pagination">

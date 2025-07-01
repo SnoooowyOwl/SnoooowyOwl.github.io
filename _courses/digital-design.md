@@ -18,17 +18,17 @@ weight: 1
 - [verilator使用教程](#)
 - [示例代码](#)
 
-
-{% assign top_courses = site.courses | where_exp:"item","item.parent == nil" | sort:"weight" %}
-{% assign current_index = top_courses | index_of: page %}
+{% assign siblings = site.courses | where_exp: "item", "item.parent == nil" | sort: "weight" %}
+{% assign current_index = siblings | index_of: page %}
 
 <nav class="pagination">
   {% if current_index > 0 %}
-    {% assign prev = top_courses[current_index | minus: 1] %}
+    {% assign prev = siblings[current_index | minus:1] %}
     <a class="prev" href="{{ prev.url }}">&larr; {{ prev.title }}</a>
   {% endif %}
-  {% if current_index < top_courses.size | minus: 1 %}
-    {% assign next = top_courses[current_index | plus: 1] %}
+  {% if current_index < siblings.size | minus:1 %}
+    {% assign next = siblings[current_index | plus:1] %}
     <a class="next" href="{{ next.url }}">{{ next.title }} &rarr;</a>
   {% endif %}
 </nav>
+

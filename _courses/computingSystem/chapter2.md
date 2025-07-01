@@ -3,10 +3,11 @@ title: "Graph Algorithm 图算法"
 collection: courses
 parent: index
 layout: single
+weight: 2
 ---
 
 
-{% assign siblings = site.courses | where:"parent", page.parent | sort:"date" %}
+{% assign siblings = site.courses | where: "parent", page.parent | sort: "weight" %}
 {% assign current_index = siblings | index_of: page %}
 
 <nav class="pagination">
@@ -19,3 +20,5 @@ layout: single
     <a class="next" href="{{ next.url }}">{{ next.title }} &rarr;</a>
   {% endif %}
 </nav>
+
+
