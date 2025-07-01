@@ -6,6 +6,7 @@ excerpt: "介绍组合逻辑、时序逻辑、Verilog 设计、FPGA 实践等内
 layout: single
 author_profile: true
 classes: wide
+weight: 1
 ---
 
 ## 课程大作业：大矩阵乘法单元的设计

@@ -6,6 +6,7 @@ excerpt: "介绍图算法、BDD、SAT、命题逻辑、时序逻辑等内容"
 layout: single
 author_profile: true
 classes: wide
+weight: 2
 ---
 
 ## 课程简介

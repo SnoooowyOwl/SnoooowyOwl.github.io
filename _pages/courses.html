@@ -5,7 +5,7 @@ permalink: /courses/
 author_profile: true
 ---
 
-{% assign courses = site.courses | sort: 'date' | reverse %}
+{% assign courses = site.courses | where_exp: "item", "item.parent == nil" | sort: "weight" %}
 
 {% for course in courses %}
   {% if course.parent == nil %}
