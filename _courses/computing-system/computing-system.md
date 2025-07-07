@@ -1,5 +1,6 @@
 ---
 title: "计算系统建模与优化"
+slug: computing-system
 collection: courses
 date: 2025-07-02
 excerpt: "介绍图算法、BDD、SAT、命题逻辑、时序逻辑等内容"
@@ -18,11 +19,14 @@ weight: 2
   {% endfor %}
 </ul>
 
-{% comment %}
-课程主页的上一页下一页跳转（只跳课程主页之间）
-{% endcomment %}
+{% comment %} 课程主页跳转 {% endcomment %}
 {% assign siblings = site.courses | where_exp: "item", "item.parent == nil" | sort: "weight" %}
-{% assign current_index = siblings | index_of: page %}
+{% assign current_index = -1 %}
+{% for item in siblings %}
+  {% if item.url == page.url %}
+    {% assign current_index = forloop.index0 %}
+  {% endif %}
+{% endfor %}
 
 <nav class="pagination">
   {% if current_index > 0 %}

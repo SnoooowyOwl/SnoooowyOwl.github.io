@@ -8,11 +8,14 @@ weight: 1
 
 内容写在这里...
 
-{% comment %}
-章节页的上一页下一页跳转（只在同一课程章节页之间）
-{% endcomment %}
+{% comment %} 章节页跳转 {% endcomment %}
 {% assign siblings = site.courses | where: "parent", page.parent | sort: "weight" %}
-{% assign current_index = siblings | index_of: page %}
+{% assign current_index = -1 %}
+{% for item in siblings %}
+  {% if item.url == page.url %}
+    {% assign current_index = forloop.index0 %}
+  {% endif %}
+{% endfor %}
 
 <nav class="pagination">
   {% if current_index > 0 %}

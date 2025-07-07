@@ -1,5 +1,6 @@
 ---
 title: "数字系统原理与设计"
+slug: digital-design
 collection: courses
 date: 2025-07-02
 excerpt: "介绍组合逻辑、时序逻辑、Verilog 设计、FPGA 实践等内容"
@@ -18,11 +19,14 @@ weight: 1
   {% endfor %}
 </ul>
 
-{% comment %}
-课程主页的上一页下一页跳转（只跳课程主页之间）
-{% endcomment %}
+{% comment %} 课程主页跳转 {% endcomment %}
 {% assign siblings = site.courses | where_exp: "item", "item.parent == nil" | sort: "weight" %}
-{% assign current_index = siblings | index_of: page %}
+{% assign current_index = -1 %}
+{% for item in siblings %}
+  {% if item.url == page.url %}
+    {% assign current_index = forloop.index0 %}
+  {% endif %}
+{% endfor %}
 
 <nav class="pagination">
   {% if current_index > 0 %}
