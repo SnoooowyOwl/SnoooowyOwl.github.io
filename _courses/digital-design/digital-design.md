@@ -7,6 +7,7 @@ excerpt: "介绍组合逻辑、时序逻辑、Verilog 设计、FPGA 实践等内
 layout: single
 author_profile: true
 classes: wide
+parent: null
 weight: 1
 ---
 22.06
