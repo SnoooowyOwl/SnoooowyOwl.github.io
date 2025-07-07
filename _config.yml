@@ -231,6 +231,7 @@ collections:
   courses:
     output: true
     permalink: /:collection/:path/
+    sort_by: weight
 
 # These settings control how pages and collections are included in the site
 defaults:
