@@ -1,58 +1,8 @@
-{% comment %}
-覆盖 default footer，实现课程主页间、章节页内跳转，防止跳转串页
-{% endcomment %}
-
-{% if page.collection == "courses" %}
-
-  {% if page.parent %}
-    {%- comment -%} 当前是章节页 {%- endcomment -%}
-    {% assign siblings = site.courses | where: "parent", page.parent | sort: "weight" %}
-    {% assign current_index = -1 %}
-    {% for item in siblings %}
-      {% if item.url == page.url %}
-        {% assign current_index = forloop.index0 %}
-      {% endif %}
-    {% endfor %}
-
-    <nav class="pagination">
-      {% if current_index > 0 %}
-        {% assign prev = siblings[current_index | minus: 1] %}
-        <a class="pagination--pager prev" href="{{ prev.url }}">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a>
-      {% endif %}
-      {% if current_index < siblings.size | minus: 1 %}
-        {% assign next = siblings[current_index | plus: 1] %}
-        <a class="pagination--pager next" href="{{ next.url }}">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</a>
-      {% endif %}
-    </nav>
-
-  {% else %}
-    {%- comment -%} 当前是课程主页 {%- endcomment -%}
-    {% assign siblings = site.courses | where_exp: "item", "item.parent == nil" | sort: "weight" %}
-    {% assign current_index = -1 %}
-    {% for item in siblings %}
-      {% if item.url == page.url %}
-        {% assign current_index = forloop.index0 %}
-      {% endif %}
-    {% endfor %}
-
-    <nav class="pagination">
-      {% if current_index > 0 %}
-        {% assign prev = siblings[current_index | minus: 1] %}
-        <a class="pagination--pager prev" href="{{ prev.url }}">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a>
-      {% endif %}
-      {% if current_index < siblings.size | minus: 1 %}
-        {% assign next = siblings[current_index | plus: 1] %}
-        <a class="pagination--pager next" href="{{ next.url }}">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</a>
-      {% endif %}
-    </nav>
-  {% endif %}
-
-{% else %}
-  {%- comment -%} 其他页面继续使用默认 prev/next {%- endcomment -%}
+{% unless page.collection == "courses" %}
   {% if page.previous %}
-    <a class="pagination--pager prev" href="{{ page.previous.url }}">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a>
+    <a class="pagination--pager prev" href="{{ page.previous.url }}">← {{ page.previous.title }}</a>
   {% endif %}
   {% if page.next %}
-    <a class="pagination--pager next" href="{{ page.next.url }}">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</a>
+    <a class="pagination--pager next" href="{{ page.next.url }}">{{ page.next.title }} →</a>
   {% endif %}
-{% endif %}
+{% endunless %}
