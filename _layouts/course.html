@@ -21,15 +21,19 @@ layout: default
   </section>
 
   {% if page.parent %}
-  <footer style="padding: 1rem 1.5rem; 
-                 box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-                 border-radius: 8px; 
-                 text-align: center;
-                 background-color: var(--content-bg);">
-    <a href="/courses/{{ page.parent }}/" class="btn btn--primary" style="text-decoration: none; font-weight: 600;">
-      返回课程主页
-    </a>
-  </footer>
+    <div style="text-align: center; margin: 2rem 0;">
+      <a href="/courses/{{ page.parent }}/" class="btn btn--primary" style="text-decoration: none; font-weight: 600;">
+        返回课程主页
+      </a>
+    </div>
   {% endif %}
 
+  {% unless page.parent %}
+    <div style="text-align: center; margin: 2rem 0;">
+      <a href="/courses/" class="btn btn--primary" style="text-decoration: none; font-weight: 600;">
+        返回课程总目录
+      </a>
+    </div>
+  {% endunless %}
+  
 </article>
