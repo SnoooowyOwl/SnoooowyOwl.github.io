@@ -1,5 +1,5 @@
 ---
-title: "数字系统设计"
+title: "计算系统建模,分析与优化"
 layout: course
 collection: courses
 slug: computing-sys
