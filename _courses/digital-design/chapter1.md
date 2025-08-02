@@ -7,7 +7,7 @@ position: 10
 permalink: /courses/digital-sys/chapter1/
 ---
 
-本章将介绍 CMOS 电路的基本构成与工作原理：
+本章将介绍 CMOS 电路的基本构成与工作原理
 
 - CMOS 反相器
 - 器件建模与电流分析
