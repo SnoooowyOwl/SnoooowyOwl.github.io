@@ -14,12 +14,22 @@ permalink: /courses/digital-sys/
 - 时序逻辑与状态机
 - Verilog 编程基础
 
-欢迎阅读本课程的各个章节！
+---
 
+## 📚 章节目录
 
 {% assign chapters = site.courses | where: "parent", page.slug | sort: "position" %}
-<ul>
+
+<div class="feature__wrapper">
   {% for chapter in chapters %}
-    <li><a href="{{ chapter.url | relative_url }}">{{ chapter.title }}</a></li>
+    <div class="feature__item" style="border: 1px solid #ccc; padding: 1rem; border-radius: 0.5rem; margin-bottom: 1rem;">
+      <h3 style="margin-top: 0;"><a href="{{ chapter.url | relative_url }}">{{ chapter.title }}</a></h3>
+      {% if chapter.excerpt %}
+        <p>{{ chapter.excerpt }}</p>
+      {% else %}
+        <p>章节简介待添加。</p>
+      {% endif %}
+      <a href="{{ chapter.url | relative_url }}" class="btn btn--primary">阅读章节</a>
+    </div>
   {% endfor %}
-</ul>
+</div>
