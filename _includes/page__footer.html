@@ -1,0 +1,19 @@
+{% if page.collection == "courses" and page.parent %}
+  {% assign siblings = site.courses | where: "parent", page.parent | sort: "position" %}
+  {% assign index = siblings | index_of: page %}
+  {% assign prev_page = siblings[index | minus: 1] %}
+  {% assign next_page = siblings[index | plus: 1] %}
+
+  <nav class="pagination" role="navigation">
+    {% if prev_page %}
+      <a href="{{ prev_page.url | relative_url }}" class="previous">
+        ← {{ prev_page.title }}
+      </a>
+    {% endif %}
+    {% if next_page %}
+      <a href="{{ next_page.url | relative_url }}" class="next">
+        {{ next_page.title }} →
+      </a>
+    {% endif %}
+  </nav>
+{% endif %}
