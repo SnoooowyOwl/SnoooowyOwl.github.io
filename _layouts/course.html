@@ -4,30 +4,31 @@ layout: default
 
 <article class="course-article" style="max-width: 900px; margin: 2rem auto;">
 
-  <header style="
-    padding: 1rem 1.5rem;
-    background-color: var(--content-bg);
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    border-bottom: 1px solid var(--hr-border);
-    border-radius: 8px 8px 0 0;">
+  <header style="padding: 1rem 1.5rem; 
+                 background-color: var(--content-bg);
+                 box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+                 border-bottom: 1px solid var(--hr-border);
+                 border-radius: 8px 8px 0 0;">
     <h1 style="margin: 0;">{{ page.title }}</h1>
   </header>
 
-  <section style="
-    padding: 2rem 2rem;
-    background-color: var(--global-bg);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    border-radius: 0 0 8px 8px;
-    margin-bottom: 2rem;">
+  <section style="padding: 2rem 2rem; 
+                  background-color: var(--global-bg);
+                  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+                  border-radius: 0 0 8px 8px;
+                  margin-bottom: 2rem;">
     {{ content }}
   </section>
 
   {% if page.parent %}
-  <footer style="
-    margin: 0 1.5rem 3rem; 
-    text-align: center;
-    padding: 0;">
-    <a href="/courses/{{ page.parent }}/" class="btn btn--primary" style="font-weight: 600;">
+  <footer style="margin: 0 1.5rem 3rem; /* 去掉 max-width */
+                 padding: 1rem 1.5rem;
+                 /* 去掉阴影和背景色 */
+                 box-shadow: none;
+                 background-color: transparent;
+                 border-radius: 0;
+                 text-align: center;">
+    <a href="/courses/{{ page.parent }}/" class="btn btn--primary" style="text-decoration: none; font-weight: 600;">
       ← 返回课程主页
     </a>
   </footer>
