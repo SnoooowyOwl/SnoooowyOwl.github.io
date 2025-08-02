@@ -41,7 +41,7 @@ permalink: /courses/computing-sys/project/
 这部分是运行速度的瓶颈，关键在于构建BDD的策略。
 
 
-## 在BDD上采样
+## 第四部分：在BDD上采样
 
 ---
 
