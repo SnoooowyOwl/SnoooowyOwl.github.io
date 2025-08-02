@@ -7,7 +7,7 @@ position: 1
 permalink: /courses/digital-sys/
 ---
 
-本课程介绍数字逻辑设计的基础，包括：
+本课程介绍数字逻辑设计的基础
 
 - CMOS 电路
 - 组合逻辑与最小化
