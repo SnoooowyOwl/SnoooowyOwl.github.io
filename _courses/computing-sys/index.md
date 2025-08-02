@@ -33,11 +33,6 @@ permalink: /courses/computing-sys/
           {{ chapter.title }}
         </a>
       </h3>
-      {% if chapter.excerpt %}
-        <p style="margin: 0;">{{ chapter.excerpt }}</p>
-      {% else %}
-        <p style="margin: 0; color: #888;">章节简介待添加。</p>
-      {% endif %}
     </div>
   {% endfor %}
 
