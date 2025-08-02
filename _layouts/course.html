@@ -21,13 +21,11 @@ layout: default
   </section>
 
   {% if page.parent %}
-  <footer style="margin: 0 1.5rem 3rem; /* 去掉 max-width */
-                 padding: 1rem 1.5rem;
-                 /* 去掉阴影和背景色 */
-                 box-shadow: none;
-                 background-color: transparent;
-                 border-radius: 0;
-                 text-align: center;">
+  <footer style="max-width: 300px; margin: 0 auto 3rem; padding: 1rem 1.5rem; 
+                 box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+                 border-radius: 8px; 
+                 text-align: center;
+                 background-color: var(--content-bg);">
     <a href="/courses/{{ page.parent }}/" class="btn btn--primary" style="text-decoration: none; font-weight: 600;">
       ← 返回课程主页
     </a>
