@@ -1,10 +1,10 @@
 ---
-title: "第 1 章：CMOS 电路基础"
+title: "课程大作业:满足约束的样例生成器"
 layout: course
 collection: courses
-parent: digital-sys
+parent: computing-sys
 position: 1
-permalink: /courses/digital-sys/chapter1/
+permalink: /courses/computing-sys/project/
 ---
 
 本章将介绍 CMOS 电路的基本构成与工作原理
