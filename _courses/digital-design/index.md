@@ -20,19 +20,21 @@ permalink: /courses/digital-sys/
 
 {% assign chapters = site.courses | where: "parent", page.slug | sort: "position" %}
 
-<div class="cards cards--three">
+<div style="background: #f9f9f9; padding: 1.5rem; border-radius: 12px;">
+
   {% for chapter in chapters %}
-    <div class="card" style="box-shadow: 0 2px 8px rgba(0,0,0,0.08); border-radius: 8px; padding: 1.2rem; margin-bottom: 1rem; background-color: var(--global-bg); transition: transform 0.2s;">
-      <h3 style="margin-top: 0;">
-        <a href="{{ chapter.url | relative_url }}" style="text-decoration: none; color: inherit;">
+    <div style="margin-bottom: 1.5rem;">
+      <h3 style="margin-top: 0; margin-bottom: 0.5rem;">
+        <a href="{{ chapter.url | relative_url }}" style="text-decoration: none; color: #0056b3;">
           {{ chapter.title }}
         </a>
       </h3>
       {% if chapter.excerpt %}
-        <p style="margin-bottom: 0;">{{ chapter.excerpt }}</p>
+        <p style="margin: 0;">{{ chapter.excerpt }}</p>
       {% else %}
-        <p style="margin-bottom: 0; color: #888;">章节简介待添加。</p>
+        <p style="margin: 0; color: #888;">章节简介待添加。</p>
       {% endif %}
     </div>
   {% endfor %}
+
 </div>
