@@ -1,7 +1,17 @@
-{% if page.parent %}
+---
+layout: default
+---
+
+<article class="course-article">
+  <h1>{{ page.title }}</h1>
+
+  {{ content }}
+
+  {% if page.parent %}
   <div style="margin-top: 2rem;">
     <a href="/courses/{{ page.parent }}/" class="btn btn--primary">
       ← 返回课程主页
     </a>
   </div>
-{% endif %}
+  {% endif %}
+</article>
