@@ -10,7 +10,7 @@ permalink: /courses/software-designPractice/
 本课程介绍面向对象编程和软件设计方法
 
 - c++ 类，继承，封装，多态
-- 软件jiegou
+- 软件设计方法
 - 必要的工具
 ---
 
