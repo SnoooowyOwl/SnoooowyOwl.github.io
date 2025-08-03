@@ -12,6 +12,7 @@ permalink: /courses/software-designPractice/
 - c++ 类，继承，封装，多态
 - 软件设计方法
 - 必要的工具
+
 ---
 
 ## 章节目录
