@@ -1,5 +1,5 @@
 ---
-title: "软件设计时间"
+title: "软件设计实践"
 layout: course
 collection: courses
 slug: software-designPractice
