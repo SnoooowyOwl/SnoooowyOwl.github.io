@@ -11,6 +11,7 @@ permalink: /courses/software-designPractice/project/
 
 基本实现在课程文档里已经写得很详细了，下面主要是踩过的坑以及 `level-7 +` 的内容。
 
+参考代码在[这里](https://github.com/SnoooowyOwl/mini-lisp),我大一的时候不太会用git，索性就把visualstudio工程整个传上去了，应该可以直接运行。
 ## 支持代码高亮
 代码高亮就是要给代码的不同部分染不同的颜色，具体的效果可以参考任何一个IDE，为了简单起见，我们不妨考虑将以下这些东西显示为特殊的颜色，其余的部分仍保持白色：数字，标识符(identifier), 保留字和函数名，括号。
 
