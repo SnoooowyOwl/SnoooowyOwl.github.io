@@ -1,4 +1,4 @@
-<div id="daily-poem" style="
+<div style="
   position: fixed;
   bottom: 10px;
   right: 10px;
@@ -11,24 +11,10 @@
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
   z-index: 9999;
 ">
-  正在加载诗句…
+  {% assign poems = "床前明月光，疑是地上霜。|举头望明月，低头思故乡。|春眠不觉晓，处处闻啼鸟。|锄禾日当午，汗滴禾下土。|海内存知己，天涯若比邻。|会当凌绝顶，一览众山小。|人生得意须尽欢，莫使金樽空对月。|清明时节雨纷纷，路上行人欲断魂。" | split: "|" %}
+
+  {% assign day_of_year = site.time | date: "%j" | plus: 0 %}
+  {% assign index = day_of_year | modulo: poems.size %}
+
+  {{ poems[index] }}
 </div>
-
-<script>
-  const poems = [
-    "床前明月光，疑是地上霜。",
-    "举头望明月，低头思故乡。",
-    "春眠不觉晓，处处闻啼鸟。",
-    "锄禾日当午，汗滴禾下土。",
-    "海内存知己，天涯若比邻。",
-    "会当凌绝顶，一览众山小。",
-    "人生得意须尽欢，莫使金樽空对月。",
-    "清明时节雨纷纷，路上行人欲断魂。"
-  ];
-
-  const today = new Date();
-  const dayOfYear = Math.floor((today - new Date(today.getFullYear(), 0, 0)) / 86400000); // 第几天
-  const index = dayOfYear % poems.length;
-
-  document.getElementById('daily-poem').textContent = poems[index];
-</script>

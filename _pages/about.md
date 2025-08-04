@@ -13,6 +13,7 @@ redirect_from:
 ## News
 
 1.1
+
 ---
 
 {% include poem_box.html %}
