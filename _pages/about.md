@@ -12,7 +12,7 @@ redirect_from:
 
 ## News
 
---
+---
 
 <div id="floating-poem-box" style="
     position: fixed;
